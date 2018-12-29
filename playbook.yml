@@ -1,0 +1,13 @@
+---
+- hosts: 127.0.0.1
+  become: yes
+  tasks:
+    - name: make sure that we can connect to the machine
+      ping:
+
+    - name: ensure aptitude is installed
+      apt:
+        name:
+          - aptitude
+        state: present
+
