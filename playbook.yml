@@ -14,3 +14,13 @@
           - zsh
         state: present
 
+    - name: download micro
+      get_url: 
+        url: https://github.com/zyedidia/micro/releases/download/v1.4.1/micro-1.4.1-linux64.tar.gz
+        dest: /tmp/micro.tar.gz
+
+    - name: extract micro
+      unarchive: src=/tmp/micro.tar.gz dest=/tmp copy=no
+
+    - name: copy micro to /usr/bin directory
+      command: cp /tmp/micro-1.4.1/micro /usr/bin/micro
