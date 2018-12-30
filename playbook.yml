@@ -1,5 +1,5 @@
 ---
-- hosts: 127.0.0.1
+- hosts: all
   become: yes
   tasks:
     - name: make sure that we can connect to the machine
