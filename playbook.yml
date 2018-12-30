@@ -6,7 +6,7 @@
       ping:
 
     - name: ensure dev utils is installed
-      apt:
+      package:
         name:
           - git
           - curl

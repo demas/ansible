@@ -1,2 +1,2 @@
-[dev_ubuntu]
+[dev]
 local ansible_host=127.0.0.1 ansible_user=demas
