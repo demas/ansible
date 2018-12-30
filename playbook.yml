@@ -5,9 +5,12 @@
     - name: make sure that we can connect to the machine
       ping:
 
-    - name: ensure aptitude is installed
+    - name: ensure dev utils is installed
       apt:
         name:
-          - aptitude
+          - git
+          - curl
+          - mc
+          - zsh
         state: present
 
