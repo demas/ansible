@@ -3,6 +3,7 @@
   become: yes
   roles:
     - geerlingguy.git
+    - { role: viasite-ansible.zsh, zsh_user: demas }
 
   tasks:
     - name: make sure that we can connect to the machine
@@ -11,10 +12,8 @@
     - name: ensure dev utils is installed
       package:
         name:
-          - git
           - curl
           - mc
-          - zsh
         state: present
 
     - name: download micro
