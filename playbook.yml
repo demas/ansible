@@ -28,3 +28,8 @@
 
     - name: copy micro to /usr/bin directory
       command: cp /tmp/micro-1.4.1/micro /usr/bin/micro
+ 
+    - name: install pgcli
+      pip:
+        name:
+          - pgcli
