@@ -3,7 +3,8 @@
   become: yes
   roles:
     - geerlingguy.git
-    - geerlingguy.git
+    - geerlingguy.docker
+    - geerlingguy.pip
     - { role: viasite-ansible.zsh, zsh_user: demas }
 
   tasks:
