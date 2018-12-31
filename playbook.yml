@@ -1,6 +1,9 @@
 ---
 - hosts: all
   become: yes
+  roles:
+    - geerlingguy.git
+
   tasks:
     - name: make sure that we can connect to the machine
       ping:
