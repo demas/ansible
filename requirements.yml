@@ -3,3 +3,4 @@
 - name: geerlingguy.docker
 - name: geerlingguy.pip
 - name: viasite-ansible.zsh
+- name: geerlingguy.nginx

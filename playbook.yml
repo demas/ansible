@@ -33,3 +33,8 @@
       pip:
         name:
           - pgcli
+
+- hosts: web-servers
+  become: yes
+  roles:
+    - geerlingguy.nginx
